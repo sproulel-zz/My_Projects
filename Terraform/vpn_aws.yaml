@@ -1,0 +1,10 @@
+
+#cloud-config
+
+package_update: true
+
+packages:
+    -q
+runcmd:
+    touch this.py
+    echo "print("this")" >> this.py
